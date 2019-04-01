@@ -8,7 +8,7 @@ module.exports = {
       'link',
       {
         rel: 'icon',
-        href: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg'
+        href: 'https://ws4.sinaimg.cn/large/006tKfTcly1g1ne1gs3udj30dw08cwep.jpg'
       }
     ]
   ],
@@ -17,7 +17,7 @@ module.exports = {
       {
         title: 'Get started',
         collapsable: false,
-        children: ['/javascript/001-get-started.md', '/javascript/002-globby.md']
+        children: ['/args/001-pass-args.md']
       }
     ]
   }
