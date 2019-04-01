@@ -1,7 +1,7 @@
 {
   "name": "npm-notes",
   "version": "1.0.0",
-  "description": "Notes for npm.",
+  "description": "Npm notes.",
   "homepage": "https://github.com/afeiship/npm-notes",
   "author": {
     "name": "afei",
@@ -10,7 +10,7 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "docs:deploy": "./deploy.sh"
+    "docs:deploy": "./.bin/deploy.sh"
   },
   "license": "MIT",
   "devDependencies": {

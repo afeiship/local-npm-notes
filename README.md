@@ -1,2 +1,5 @@
 # npm-notes
-> Notes for npm.
+> Npm notes.
+
+## docs
+- https://afeiship.github.io/npm-notes/

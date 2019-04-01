@@ -1,8 +1,8 @@
 module.exports = {
   base: '/npm-notes/',
-  title: 'Notes for npm',
+  title: 'Npm notes',
   host: '0.0.0.0',
-  description: 'Notes for npm',
+  description: 'Npm notes',
   head: [
     [
       'link',
