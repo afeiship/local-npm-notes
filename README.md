@@ -1,2 +1,2 @@
-# local-npm-notes
-> Local npm notes.
+# npm-notes
+> Notes for npm.
