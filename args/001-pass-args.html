@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>pass arguments | Npm notes</title>
+    <meta name="description" content="Npm notes">
+    <link rel="icon" href="https://ws4.sinaimg.cn/large/006tKfTcly1g1ne1gs3udj30dw08cwep.jpg">
+    
+    <link rel="preload" href="/npm-notes/assets/css/0.styles.3fc0ae06.css" as="style"><link rel="preload" href="/npm-notes/assets/js/app.22536a61.js" as="script"><link rel="preload" href="/npm-notes/assets/js/2.79b781a5.js" as="script"><link rel="preload" href="/npm-notes/assets/js/6.0a93d11f.js" as="script"><link rel="prefetch" href="/npm-notes/assets/js/3.5421e93d.js"><link rel="prefetch" href="/npm-notes/assets/js/4.8e5dbcef.js"><link rel="prefetch" href="/npm-notes/assets/js/5.cf5b41c7.js"><link rel="prefetch" href="/npm-notes/assets/js/7.41ef9c39.js">
+    <link rel="stylesheet" href="/npm-notes/assets/css/0.styles.3fc0ae06.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/npm-notes/" class="home-link router-link-active"><!----> <span class="site-name">Npm notes</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Get started</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/npm-notes/args/001-pass-args.html" class="active sidebar-link">pass arguments</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/npm-notes/args/001-pass-args.html#command" class="sidebar-link">command</a></li><li class="sidebar-sub-header"><a href="/npm-notes/args/001-pass-args.html#get-args" class="sidebar-link">get args</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="content default"><h1 id="pass-arguments"><a href="#pass-arguments" aria-hidden="true" class="header-anchor">#</a> pass arguments</h1> <h2 id="command"><a href="#command" aria-hidden="true" class="header-anchor">#</a> command</h2> <div class="language-shell extra-class"><pre class="language-text"><code>npm run dev --report
+npm run build --args='env=development&amp;type=dll'
+</code></pre></div><h2 id="get-args"><a href="#get-args" aria-hidden="true" class="header-anchor">#</a> get args</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> qs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'querystring'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> report <span class="token operator">=</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>npm_config_report<span class="token punctuation">;</span>
+<span class="token keyword">const</span> args <span class="token operator">=</span> <span class="token function">qs</span><span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>npm_config_args<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// output:</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>report<span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// true</span>
+<span class="token comment">// { env:'development', type:'dll' }</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/npm-notes/assets/js/app.22536a61.js" defer></script><script src="/npm-notes/assets/js/2.79b781a5.js" defer></script><script src="/npm-notes/assets/js/6.0a93d11f.js" defer></script>
+  </body>
+</html>
