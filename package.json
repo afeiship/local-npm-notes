@@ -13,7 +13,8 @@
     "docs:deploy": "bin/deploy.sh",
     "build:clean": "node src/npm-run-all/clean.js",
     "build:scripts": "node src/npm-run-all/scripts.js",
-    "build:styles": "node src/npm-run-all/styles.js"
+    "build:styles": "node src/npm-run-all/styles.js",
+    "start": "node src/npm-run-all/run-in-node.js"
   },
   "license": "MIT",
   "devDependencies": {
