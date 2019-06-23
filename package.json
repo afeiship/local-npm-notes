@@ -11,6 +11,8 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "docs:deploy": "bin/deploy.sh",
+    "clean": "node src/npm-run-all/clean.js",
+    "lint": "node src/npm-run-all/lint.js",
     "build:clean": "node src/npm-run-all/clean.js",
     "build:scripts": "node src/npm-run-all/scripts.js",
     "build:styles": "node src/npm-run-all/styles.js",
