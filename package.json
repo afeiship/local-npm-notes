@@ -10,10 +10,14 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "docs:deploy": "bin/deploy.sh"
+    "docs:deploy": "bin/deploy.sh",
+    "build:clean": "node src/npm-run-all/clean.js",
+    "build:scripts": "node src/npm-run-all/scripts.js",
+    "build:styles": "node src/npm-run-all/styles.js"
   },
   "license": "MIT",
   "devDependencies": {
+    "npm-run-all": "^4.1.5",
     "vuepress": "^1.0.0-alpha.44"
   }
 }
